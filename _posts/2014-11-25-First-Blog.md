@@ -17,7 +17,7 @@ cd ~
 {% endhighlight %}
 
 ```java
-System.ou.print("Hello World");
+System.out.print("Hello World");
 ```
 
 ```ruby
