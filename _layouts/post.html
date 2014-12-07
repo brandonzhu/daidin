@@ -15,9 +15,8 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{site.baseUrl}}/blog">Return To List</a></h1>
+        <h1><a href="{{site.baseUrl}}/blog">首页</a></h1>
         <h1>待定项目组</h1>
-        <p class="view"><a href="https://github.com/brandonzhu/daidin">在github上查看<small>brandonzhu/daidin</small></a></p>
         <ol>
           {% for post in site.posts %}
             <li>
@@ -31,7 +30,7 @@
         {{content}}
       </section>
       <footer>
-        <p>This project is maintained by <a href="https://github.com/brandonzhu">brandonzhu</a></p>
+        <p style="display: none;">This project is maintained by <a href="https://github.com/brandonzhu">brandonzhu</a></p>
       </footer>
     </div>
     <script src="{{site.baseUrl}}/javascripts/scale.fix.js"></script>

@@ -122,10 +122,10 @@ header ul {
 }
 
 header li {
-  width:89px;
+  width:120px;
   /**float:left;**/
-  border-right:1px solid #d2d2d2;
-  height:40px;
+  border-right:0px solid #d2d2d2;
+  height:30px;
 }
 
 header ul a {
@@ -160,7 +160,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:570px;
   float:right;
   padding-bottom:50px;
 }
