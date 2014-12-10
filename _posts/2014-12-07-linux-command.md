@@ -1,7 +1,7 @@
 ---
 title: 'shell命令'
 layout: 'post'
-tag: 'shell'
+tag: ['shell', 'recommend']
 ---
 
 ```
