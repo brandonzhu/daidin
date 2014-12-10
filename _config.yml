@@ -1,6 +1,6 @@
 baseUrl: "/daidin"
 paginate_path: "/blog/page:num"
-paginate: 5
+paginate: 10
 markdown: kramdown
 kramdown:
   input: GFM
