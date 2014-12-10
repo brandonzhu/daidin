@@ -1,6 +1,7 @@
 ---
 title: "待定项目wiki"
 layout: "post"
+tag: ['recommend', 'project']
 ---
 
 ##### 项目要求

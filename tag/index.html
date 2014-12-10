@@ -1,0 +1,28 @@
+---
+layout: 'post'
+title: '标签列表'
+---
+
+<ul id="tagList">
+{% for tag in site.tags %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
+  {% if site.data.DaiDin[t] != null %}
+  <li style="cursor: pointer;">
+    {{site.data.DaiDin[t]}}
+    ({{posts | size}})
+  </li>
+  <ul style="display: none;" class="tagPosts">
+    {% for post in posts %}
+      <li>
+        <a href="{{site/baseUrl}}{{ post.url }}">
+          {{ post.title }}
+        </a>
+        <span>({{post.date | date: "%y-%m-%-d"}})</span>
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+</ul>
+
