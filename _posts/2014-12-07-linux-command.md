@@ -32,3 +32,15 @@ telnet host #连接远程计算机
 #ssh
 ssh host -l username #通过username登陆远程计算机
 {% endhighlight  %}
+
+{% highlight sh %}
+#jar(.jar/.war/.ear)
+#创建一个jar
+jar cvf test.jar * #打包当前目录下的所有文件
+jar cvf test.jar -C class . #打包当前的class文件夹
+jar tvf test.jar #查看包内容
+jar xvf test.jar #解压全部的包
+jar xvf test.jar test/test.class #只解压包内test目录下的test.class
+jar uvf test.jar test/test.class #更新包内的test/test.class
+7z d test.jar test/test.class #删除包内的test/test.class
+{% endhighlight  %}
