@@ -17,7 +17,7 @@ tag: ['servlet']
 一个`Java Servlet`是用来响应HTTP请求的对象。它在Servlet容器中运行，如下图所示
 ![](http://tutorials.jenkov.com/images/java-servlets/overview.png)
 
-Servlet是Web项目的一部分。一个容器可以同时运行多个项目，每个项目可以有多个`Servlet`。如下图
+Servlet是Web项目的一部分。一个容器可以同时运行多个项目，每个项目可以有多个`Servlet`。如下图  
 ![](http://tutorials.jenkov.com/images/java-servlets/overview-2.png)
 
 一个Web项目当然也包含别的一些组件。例如`Java Server Pages(JSP)`, `Java Server Faces(JSF)`和`Web Services`.这里主要讲的是`Servlet`.
