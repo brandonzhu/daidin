@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{page.title}}</title>
+
+    <link rel="stylesheet" href="{{site.baseUrl}}/stylesheets/styles.css">
+    <link rel="stylesheet" href="{{site.baseUrl}}/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h3><a href="{{site.baseUrl}}/blog">Blog列表</a>&nbsp;&nbsp;<a href="{{site.baseUrl}}/tag">Tag列表</a></h3>
+        <h2>Java Servlet</h2>
+        <ol>
+          {% for post in site.tags.servlet %}
+            <li>
+              <a href="{{site.baseUrl}}{{post.url}}">{{post.title}}</a>
+            </li>
+          {% endfor %}
+        </ol>
+      </header>
+      <section>
+				<h3>{{page.title}}</h3>
+        {{content}}
+      </section>
+      <footer>
+        <p style="display: none;">This project is maintained by <a href="https://github.com/brandonzhu">brandonzhu</a></p>
+      </footer>
+    </div>
+    <script src="{{site.baseUrl}}/javascripts/scale.fix.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="{{site.baseUrl}}/javascripts/index.js"></script>
+  </body>
+</html>
